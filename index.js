@@ -52,44 +52,44 @@ var x = client.channels.cache.get('1003696006770208849');
 
 
 
-'use strict';
-var _0x5b94 = ["ready", "PRo", "", ""," ", "", "idle", "SYS UP ", "", "dnd", "setPresence", "user", "on"];
-client[_0x5b94[12]](_0x5b94[0], function() {
- var nextIdLookup = [{
-   activity : {
-     name : "" + _0x5b94[1],
-     type : _0x5b94[2]
-   },
-   status : _0x5b94[2]
- }, {
-   activity : {
-     name : "" + _0x5b94[3] + prefix + _0x5b94[4],
-     type : _0x5b94[5]
-   },
-   status : _0x5b94[6]
- }, {
-   activity : {
-     name : "" + _0x5b94[7],
-     type : _0x5b94[8]
-   },
-   status : _0x5b94[9]
- }];
- var indexLookupKey = 0;
- setInterval(function() {
-   var currentIndex = nextIdLookup[indexLookupKey];
-   if (!currentIndex) {
-     currentIndex = nextIdLookup[0];
-     indexLookupKey = 0;
-   }
-   client[_0x5b94[11]][_0x5b94[10]](currentIndex);
-   indexLookupKey++;
- }, 3000);
-});
+// 'use strict';
+// var _0x5b94 = ["ready", "PRo", "", ""," ", "", "idle", "SYS UP ", "", "dnd", "setPresence", "user", "on"];
+// client[_0x5b94[12]](_0x5b94[0], function() {
+//  var nextIdLookup = [{
+//    activity : {
+//      name : "" + _0x5b94[1],
+//      type : _0x5b94[2]
+//    },
+//    status : _0x5b94[2]
+//  }, {
+//    activity : {
+//      name : "" + _0x5b94[3] + prefix + _0x5b94[4],
+//      type : _0x5b94[5]
+//    },
+//    status : _0x5b94[6]
+//  }, {
+//    activity : {
+//      name : "" + _0x5b94[7],
+//      type : _0x5b94[8]
+//    },
+//    status : _0x5b94[9]
+//  }];
+//  var indexLookupKey = 0;
+//  setInterval(function() {
+//    var currentIndex = nextIdLookup[indexLookupKey];
+//    if (!currentIndex) {
+//      currentIndex = nextIdLookup[0];
+//      indexLookupKey = 0;
+//    }
+//    client[_0x5b94[11]][_0x5b94[10]](currentIndex);
+//    indexLookupKey++;
+//  }, 3000);
+// });
 
 
-// client.on('ready', () => {
-//     client.user.setActivity("ProSYSTEM", { type: 'PLAYING' })
-//   });
+client.on('ready', () => {
+    client.user.setActivity("ProSYSTEM", { type: 'STREAMING', url: 'https://www.twitch.tv/prosystem' })
+  });
 
   
 //   //ismailmgde
