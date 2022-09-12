@@ -2098,5 +2098,5 @@ client.on('guildBanAdd', async banAdd => {
 
 
 
-client.login(bot.TOKEN);
+client.login(process.env.token);
 
